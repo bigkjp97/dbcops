@@ -1,0 +1,10 @@
+server:
+  host: 'localhost'
+  port: '9093'
+config:
+  # usr/passwd@host:1521/db
+  - database: ''
+    # query
+    sqltext: [ "" ]
+    # minute
+    interval: 1
