@@ -2,7 +2,7 @@ server:
   # IP address
   host: 'localhost'
   port: '9093'
-  # dir address(absolute), double '\'
+  # dir address(absolute)
   instantclient: ''
 config:
   # usr/passwd@host:1521/db
