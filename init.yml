@@ -1,13 +1,14 @@
 server:
   host: 'localhost'
   port: '9093'
+  # dir address(absolute)
   instantclient: ''
 config:
   # usr/passwd@host:1521/db
   - database: ''
     # query
     sqltext: ""
-    # matrics: which column needs to be collected(NUMBER)
+    # matrics: column name, which column needs to be collected(NUMBER)
     matric: ''
     # label: column name(not null)
     label: [ '' ]
