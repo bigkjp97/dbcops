@@ -1,7 +1,8 @@
 server:
+  # IP address
   host: 'localhost'
   port: '9093'
-  # dir address(absolute)
+  # dir address(absolute), double '\'
   instantclient: ''
 config:
   # usr/passwd@host:1521/db
@@ -10,6 +11,8 @@ config:
     sqltext: ""
     # matrics: column name, which column needs to be collected(NUMBER)
     matric: ''
+    # tag name, dbcops_tag_matric{}
+    tag: ''
     # label: column name(not null)
     label: [ '' ]
     # minute

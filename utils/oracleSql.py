@@ -5,16 +5,17 @@ from prometheus_client import Gauge
 import cx_Oracle
 
 
-
 class oracleSQL:
     def __init__(self, config, client):
         self._database = config['database']
         self._sqlText = config['sqltext']
         self._matric = config['matric']
+        self._tag = config['tag']
         self._label = config['label']
         self._interval = config['interval']
         self._client = client
-        self._gauge = Gauge('dbcops_' + self._matric, 'Return value of column ' + self._matric, self._label)
+        self._gauge = Gauge('dbcops_' + self._tag + '_' + self._matric, 'Return value of column ' + self._matric,
+                            self._label)
 
     def fetch_table(self, cursor, sql):
         # 下标计数
