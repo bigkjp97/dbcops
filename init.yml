@@ -1,10 +1,15 @@
 server:
   host: 'localhost'
   port: '9093'
+  instantclient: ''
 config:
   # usr/passwd@host:1521/db
   - database: ''
     # query
-    sqltext: [ "" ]
+    sqltext: ""
+    # matrics: which column needs to be collected(NUMBER)
+    matric: ''
+    # label: column name(not null)
+    label: [ '' ]
     # minute
     interval: 1

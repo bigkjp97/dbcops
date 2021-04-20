@@ -17,9 +17,9 @@ def main():
 
     # print(configSet)
     start_http_server(int(c['server']['port']), c['server']['host'])
-
+    client = c['server']['instantclient']
     for config in c['config']:
-        o = threading.Thread(target=oracleSQL(config).do_execute())
+        o = threading.Thread(target=oracleSQL(config, client).do_execute())
         o.start()
     # for case in cases:
     #     file = case['file']
