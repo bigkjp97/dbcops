@@ -8,7 +8,7 @@ type) as labels and focus on monitoring numerical value. This program will start
 in `init.yml`, it will collect data with `prometheus` formats, then start a [`prometheus`](https://prometheus.io/) for
 your monitoring journey!
 
-## prepare
+## preparation
 
 Download [instantclient](https://www.oracle.com/database/technologies/instant-client/downloads.html), choose right
 version, fill the absolute path in `init.yml`.
